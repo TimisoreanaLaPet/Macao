@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Deck {
@@ -13,8 +14,9 @@ public class Deck {
                 deck.add(new Card(Card.Symbol.values()[j], i + 1));
             }
         }
+        Collections.shuffle(deck);
     }
-    void showDeck(){
+    void displayDeck(){
         System.out.println(deck);
     }
 }
